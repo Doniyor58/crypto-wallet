@@ -1,0 +1,42 @@
+@import "src/assets/styles/constants";
+
+.transfer {
+  min-width: 600px;
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    text-align: center;
+    color: $color_white;
+    font-size: $intend_7;
+    font-weight: $font_weight_medium;
+
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 120px;
+    margin-bottom: $intend_10;
+  }
+
+  .balance {
+    color: $color_white;
+    font-size: $intend_4;
+    font-weight: $font_weight_medium;
+  }
+
+  .button {
+    color: $color_purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+      display: inline-block;
+      margin-right: $intend_2;
+    }
+  }
+}

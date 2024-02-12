@@ -1,0 +1,47 @@
+@import 'src/assets/styles/constants';
+
+.navigation {
+  width: 100%;
+  padding: $intend_3 0;
+  font-weight: $font_weight_medium;
+
+  .list {
+    display: flex;
+    justify-content: center;
+
+    font-size: $intend_5;
+    color: $color_gray_30;
+
+    &__item {
+      position: relative;
+
+      &:first-child {
+        margin-right: $intend_10;
+      }
+
+      &:hover {
+        &:after {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 1.4px;
+          top: 120%;
+          left: 0;
+
+          background: $color_gray_10;
+        }
+      }
+
+      &__selected {
+        color: $color_white;
+        cursor: default;
+
+        &:hover {
+          &:after {
+            content: none;
+          }
+        }
+      }
+    }
+  }
+}

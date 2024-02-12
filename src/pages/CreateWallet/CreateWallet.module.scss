@@ -1,0 +1,37 @@
+@import "src/assets/styles/constants";
+
+
+.createWallet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $intend_7;
+
+  .description {
+    text-align: center;
+    margin-bottom: $intend_10;
+
+    .title {
+      color: $color_white;
+      font-size: $intend_7;
+      font-weight: $font-weight_medium;
+    }
+  }
+
+  .buttons {
+    height: 128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
+      margin-right: $intend_2;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@use '../../assets/styles/constants' as *;
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    color: $color_white;
+    text-align: center;
+    white-space: pre-line;
+    font-size: $font_size_xxl;
+  }
+
+  .button {
+    color: $color_purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+      margin-left: $intend_2;
+    }
+  }
+
+  .auth {
+    margin-top: $intend_6;
+
+    color: $color_white;
+    font-weight: $font-weight_medium;
+
+    transition: opacity $animation_speed_normal $animation_ease_in;
+
+    &__link {
+      margin-left: $intend_2;
+      border-bottom: 1px solid $color_white;
+    }
+
+    &__disable {
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+}

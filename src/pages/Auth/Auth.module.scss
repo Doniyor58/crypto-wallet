@@ -1,0 +1,31 @@
+@use '../../assets/styles/constants' as *;
+
+.auth {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .title {
+    color: $color_white;
+    text-align: center;
+    white-space: pre-line;
+    font-size: $font_size_xxl;
+  }
+
+  .choice {
+    color: $color_white;
+    margin: $intend_4 0;
+  }
+
+  .button {
+    color: $color_purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logo {
+      margin-left: $intend_2;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+@import "src/assets/styles/constants";
+
+.wallet {
+  min-width: 600px;
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    text-align: center;
+    color: $color_white;
+    font-size: $intend_5;
+    font-weight: $font_weight_medium;
+
+    margin-bottom: 120px;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: center;
+    width: 428px;
+    margin-bottom: $intend_10;
+
+    &__row {
+      justify-content: space-between;
+    }
+  }
+
+  .action {
+    color: $color_purple;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__title {
+      margin-right: 10px;
+    }
+  }
+
+  .coins {
+    width: 100%;
+    padding: $intend_2;
+    margin-bottom: auto;
+
+    background: $color_white;
+    border-radius: 4px;
+    border: 3px solid #d1d1d1;
+
+    .solana {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: $intend_4;
+      transition: 0.12s ease-in background;
+
+      &:hover {
+        cursor: pointer;
+        background: #0000000d;
+      }
+
+      &__logo {
+        width: 60px;
+        margin-right: $intend_8;
+      }
+
+      &__qty {
+        margin-left: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "src/assets/styles/constants";
+
+.overlay {
+  height: 100vh;
+  background: #1515157E;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 25%;
+  width: 600px;
+  height: 500px;
+  background: $color_main;
+
+  border-radius: 4px;
+  border: 3px solid #d1d1d1;
+}
+
+.content {
+  color: $color_white;
+  text-align: center;
+  width: 100%;
+  padding: $intend_4;
+
+  .text {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    .title {
+      font-size: $intend_6;
+      font-weight: $font_weight_medium;
+      margin-bottom: $intend_2;
+    }
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+}
